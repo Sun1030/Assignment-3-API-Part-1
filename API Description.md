@@ -26,8 +26,7 @@ https://api.covidmanitoba.ca/cases/json?region=winnipeg&fromdate=18.11.2020&toda
 
 ###### Get Deaths and Hospitalizations
 ```
-https://api.covidmanitoba.ca/deathsandhospitalizations/json?region=winnipeg&fromdate=18.11.2020&todate=19.11.2020
-```
+https://api.covidmanitoba.ca/deathsandhospitalizations/json?region=winnipeg
 
 #### Sample Response
 
@@ -64,10 +63,8 @@ https://api.covidmanitoba.ca/deathsandhospitalizations/json?region=winnipeg&from
       "results":
       {
         "Health Region": "Winnipeg",
-        "Death":"8",
+        "Death":"142",
         "Hospitalizations":"160",
-        "From date":"November 18th, 2020",
-        "To date":"November 19th, 2020"
       },
        "status":"success"
     }
