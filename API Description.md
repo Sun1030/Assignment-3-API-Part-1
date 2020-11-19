@@ -18,22 +18,26 @@ Manitoba covid case breakdown by health region
 #### Sample Request
 
 ###### Get Recoveries
+
 ```
 https://api.covidmanitoba.ca/recoveries/json?region=all&todate=30.08.2020
 ```
 
 ###### Get Covid Cases
+
 ```
 https://api.covidmanitoba.ca/cases/json?region=winnipeg&fromdate=18.11.2020&todate=19.11.2020
 ```
 
 ###### Get Deaths and Hospitalizations
+
 ```
 https://api.covidmanitoba.ca/deathsandhospitalizations/json?region=winnipeg
 
 #### Sample Response
 
 ###### Get Recoveries
+
 ```
     {
       "results":
@@ -47,6 +51,7 @@ https://api.covidmanitoba.ca/deathsandhospitalizations/json?region=winnipeg
 ```
 
 ###### Get Covid Cases
+
 ```
     {
       "results":
@@ -61,6 +66,7 @@ https://api.covidmanitoba.ca/deathsandhospitalizations/json?region=winnipeg
 ```
 
 ###### Get Deaths and Hospitalizations
+
 ```
     {
       "results":
