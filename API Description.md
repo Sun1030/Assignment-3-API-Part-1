@@ -16,7 +16,7 @@ Manitoba covid case breakdown by health region
 
 ###### Get Recoveries
 ```
-https://api.covidmanitoba.ca/recoveries/json?region=winnipeg&todate=30.08.2020
+https://api.covidmanitoba.ca/recoveries/json?region=all&todate=30.08.2020
 ```
 
 ###### Get Covid Cases
@@ -24,13 +24,19 @@ https://api.covidmanitoba.ca/recoveries/json?region=winnipeg&todate=30.08.2020
 https://api.covidmanitoba.ca/cases/json?region=winnipeg&fromdate=18.11.2020&todate=19.11.2020
 ```
 
+###### Get Deaths and Hospitalizations
+```
+https://api.covidmanitoba.ca/deathsandhospitalizations/json?region=winnipeg&fromdate=18.11.2020&todate=19.11.2020
+```
+
 #### Sample Response
 
+###### Get Recoveries
 ```
     {
       "results":
       {
-        "Health Region": "All"
+        "Health Region": "All",
         "Recovered":"89,232",
         "To date":"August 30th, 2020"
       },
@@ -38,13 +44,30 @@ https://api.covidmanitoba.ca/cases/json?region=winnipeg&fromdate=18.11.2020&toda
     }
 ```
 
+###### Get Covid Cases
 ```
     {
       "results":
       {
-        "Health Region": "Winnipeg"
-        "Recovered":"89,232",
-        "To date":"August 30th, 2020"
+        "Health Region": "Winnipeg",
+        "Covid Cases":"271",
+        "From date":"November 18th, 2020",
+        "To date":"November 19th, 2020"
+      },
+       "status":"success"
+    }
+```
+
+###### Get Deaths and Hospitalizations
+```
+    {
+      "results":
+      {
+        "Health Region": "Winnipeg",
+        "Death":"8",
+        "Hospitalizations":"160",
+        "From date":"November 18th, 2020",
+        "To date":"November 19th, 2020"
       },
        "status":"success"
     }
