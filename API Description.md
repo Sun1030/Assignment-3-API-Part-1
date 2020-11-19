@@ -6,8 +6,8 @@
 Manitoba covid case breakdown by health region
 ##### Options: 
 
-1. GET method 1: get all covid case recoveries in Manitoba. 
- -Parameters: health regions (***optional***), to date (dd.mm.yyyy) (***optional***)
+1. GET method 1: get all covid case recoveries in Manitoba.
+    - Parameters: health regions (***optional***), to date (dd.mm.yyyy) (***optional***)
 
 * GET method 2: get all covid cases in Manitoba. Parameters: from date (dd.mm.yyyy) (***optional***), to date (dd.mm.yyyy) (***optional***)
 
